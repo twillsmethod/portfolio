@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --linen: #F5F0E8;
+  --sand: #D9C4A8;
+  --brown: #2E1F14;
+  --gold: #8B6914;
+  --gold-light: #C4A882;
+  --taupe: #7A6A5A;
+  --cream: #EDE5D8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--brown);
+  background: var(--linen);
+  font-family: var(--font-jost), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .btn-outline {
+    border: 1px solid var(--brown);
+    border-radius: 2px;
+    color: var(--brown);
+    background-color: transparent;
+    transition: background-color 200ms ease;
+    text-decoration: none;
+  }
+  .btn-outline:hover {
+    background-color: var(--cream);
+  }
+
+  .btn-outline-sm {
+    border: 0.5px solid var(--brown);
+    border-radius: 2px;
+    color: var(--brown);
+    background-color: transparent;
+    transition: background-color 200ms ease;
+    text-decoration: none;
+  }
+  .btn-outline-sm:hover {
+    background-color: var(--cream);
+  }
+
+  .venture-card {
+    transition: transform 200ms ease, box-shadow 200ms ease;
+  }
+  .venture-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(46, 31, 20, 0.1);
+  }
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: var(--shimmer-base, 0.35); }
+  50% { opacity: var(--shimmer-peak, 0.55); }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.wave-divider svg {
+  display: block;
+}
