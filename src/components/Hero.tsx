@@ -179,7 +179,7 @@ export default function Hero() {
 
       {/* Right: headshot — full height, fills remaining space */}
       <div
-        className="relative w-full h-72 sm:h-80 order-first lg:order-last lg:flex-1 lg:h-auto lg:min-h-screen"
+        className="relative w-full h-96 sm:h-[28rem] order-first lg:order-last lg:flex-1 lg:h-auto lg:min-h-screen"
         style={{ opacity: visible ? 1 : 0, transition: "opacity 1000ms ease 400ms" }}
       >
         <Image
@@ -187,7 +187,7 @@ export default function Hero() {
           alt="Tameka Wills"
           fill
           priority
-          className="object-cover object-top"
+          className="object-cover object-center lg:object-top"
           sizes="45vw"
         />
         {/* Fade from linen on the left edge to blend with the divider */}
