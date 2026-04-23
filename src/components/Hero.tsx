@@ -21,13 +21,13 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex overflow-hidden"
+      className="relative min-h-screen flex flex-col lg:flex-row overflow-hidden"
       style={{ backgroundColor: "var(--linen)" }}
     >
       <GoldSpeckles />
 
       {/* Left: all text content */}
-      <div className="relative z-10 flex flex-col justify-center px-6 py-28 lg:pl-16 lg:pr-16 w-full lg:w-[55%] flex-none">
+      <div className="relative z-10 flex flex-col justify-center px-6 py-12 lg:py-28 lg:pl-16 lg:pr-16 w-full lg:w-[55%] flex-none order-last lg:order-first">
         <div style={fadeStyle(0)}>
           <p
             className="font-cormorant italic text-xl mb-3"
@@ -179,7 +179,7 @@ export default function Hero() {
 
       {/* Right: headshot — full height, fills remaining space */}
       <div
-        className="hidden lg:block relative flex-1 min-h-screen"
+        className="relative w-full h-72 sm:h-80 order-first lg:order-last lg:flex-1 lg:h-auto lg:min-h-screen"
         style={{ opacity: visible ? 1 : 0, transition: "opacity 1000ms ease 400ms" }}
       >
         <Image
