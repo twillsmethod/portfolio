@@ -57,7 +57,7 @@ export default function Contact() {
             style={{ borderTop: "0.5px solid var(--gold-light)", paddingTop: "32px" }}
           >
             {[
-              { label: "LinkedIn", href: "https://linkedin.com/in/tamekawills" },
+              { label: "LinkedIn", href: "https://www.linkedin.com/in/twillsoffice/" },
               { label: "GitHub", href: "https://github.com/twillsmethod" },
               { label: "Resume", href: "/resume.pdf" },
             ].map((link, i) => (
