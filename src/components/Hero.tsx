@@ -187,7 +187,7 @@ export default function Hero() {
           alt="Tameka Wills"
           fill
           priority
-          className="object-cover object-center lg:object-top"
+          className="object-cover object-[50%_20%] lg:object-top"
           sizes="45vw"
         />
         {/* Fade from linen on the left edge to blend with the divider */}
