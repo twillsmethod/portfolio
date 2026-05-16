@@ -42,7 +42,7 @@ export default function Contact() {
 
         <ScrollReveal delay={450}>
           <a
-            href="mailto:mekamoe34@gmail.com"
+            href="mailto:tameka@tamekawills.com"
             className="btn-outline inline-flex items-center gap-2 font-jost text-xs tracking-widest uppercase px-8 py-4 mb-12"
             style={{ letterSpacing: "0.12em" }}
           >
